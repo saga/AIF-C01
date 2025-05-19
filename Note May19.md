@@ -32,3 +32,9 @@ Monitoring is important to maintain high-quality ML models and help ensure accur
 With Model Evaluation on Amazon Bedrock, the team can evaluate, compare, and select the best foundation model for their use case. With Guardrails for Amazon Bedrock, the team can implement safeguards for their generative AI applications. It can help to filter out any harmful content.
 借助 Amazon Bedrock 上的模型评估，团队可以评估、比较和选择适合其使用案例的最佳基础模型。借助 Amazon Bedrock 的 Guardrails，该团队可以为其生成式 AI 应用程序实施保护措施。它可以帮助过滤掉任何有害内容。
 
+SageMaker Clarify is integrated with SageMaker Experiments to provide scores detailing which features contributed the most to your model prediction on a particular input for tabular, NLP, and computer vision models. For tabular datasets, SageMaker Clarify can also output an aggregated feature importance chart which provides insights into the overall prediction process of the model. These details can help determine if a particular model input has more influence than expected on overall model behavior.
+SageMaker Clarify 与 SageMaker Experiments 集成，以提供分数，详细说明哪些特征对表格、NLP 和计算机视觉模型的特定输入的模型预测贡献最大。对于表格数据集，SageMaker Clarify 还可以输出聚合的特征重要性图表，该图表提供了对模型整体预测过程的见解。这些详细信息可以帮助确定特定模型输入对整体模型行为的影响是否大于预期。
+
+Amazon SageMaker Autopilot uses tools provided by SageMaker Clarify to help provide insights into how ML models make predictions. These tools can help ML engineers, product managers, and other internal stakeholders understand model characteristics. To trust and interpret decisions made on model predictions, both consumers and regulators rely on transparency in machine learning.
+Amazon SageMaker Autopilot 使用 SageMaker Clarify 提供的工具来帮助提供有关 ML 模型如何进行预测的见解。这些工具可以帮助 ML 工程师、产品经理和其他内部利益相关者了解模型特征。为了信任和解释根据模型预测做出的决策，消费者和监管机构都依赖于机器学习的透明度。
+
