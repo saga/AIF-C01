@@ -18,3 +18,8 @@ As AI regulations emerge, companies with robust ethical AI frameworks are better
 
 AI governance provides the guiding processes and institutional mechanisms to help ensure responsibility, risk mitigation, and oversight for AI from research and development (R&D) to deployment. It encourages maximizing societal benefits while minimizing harm from AI. Governance is crucial for responsible adoption.
 AI 治理提供了指导流程和制度机制，以帮助确保 AI 从研发 （R&D） 到部署的责任、风险缓解和监督。它鼓励最大限度地提高社会利益，同时最大限度地减少 AI 的危害。治理对于负责任的采用至关重要。
+
+
+Explainability empowers users to verify system functionality, check for unwanted biases, increase useful human control, and place appropriate trust in AI systems. This dimension of AI promotes the responsible development and deployment of AI technology for the benefit of society. Without explainability, AI could lose public trust because of inscrutable failures.
+
+可解释性使用户能够验证系统功能、检查不需要的偏差、增加有用的人工控制，并适当信任 AI 系统。AI 的这一维度促进了 AI 技术的负责任开发和部署，以造福社会。如果没有可解释性，AI 可能会因难以捉摸的失败而失去公众信任。
