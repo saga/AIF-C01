@@ -38,3 +38,20 @@ SageMaker Clarify 与 SageMaker Experiments 集成，以提供分数，详细说
 Amazon SageMaker Autopilot uses tools provided by SageMaker Clarify to help provide insights into how ML models make predictions. These tools can help ML engineers, product managers, and other internal stakeholders understand model characteristics. To trust and interpret decisions made on model predictions, both consumers and regulators rely on transparency in machine learning.
 Amazon SageMaker Autopilot 使用 SageMaker Clarify 提供的工具来帮助提供有关 ML 模型如何进行预测的见解。这些工具可以帮助 ML 工程师、产品经理和其他内部利益相关者了解模型特征。为了信任和解释根据模型预测做出的决策，消费者和监管机构都依赖于机器学习的透明度。
 
+The developer can use SageMaker Autopilot to provide explainable insights into how ML models make predictions.
+开发人员可以使用 SageMaker Autopilot 提供有关 ML 模型如何进行预测的可解释见解。
+
+AWS AI Service Cards provide transparency for AWS services. SageMaker Data Wrangler is used to balance data in cases of any imbalances. AWS HealthScribe is a HIPAA-eligible service to build clinical applications that automatically generate clinical notes by analyzing patient-clinician conversations.
+AWS AI Service Cards 为 AWS 服务提供透明度。SageMaker Data Wrangler 用于在出现任何不平衡的情况下平衡数据。AWS HealthScribe 是一项符合 HIPAA 要求的服务，用于构建临床应用程序，通过分析患者与临床医生的对话来自动生成临床记录。
+
+A model that provides transparency into a system so a human can explain the model’s output based on the weights and features is an example of interpretability in a model.
+模型为系统提供了透明度，以便人类可以根据权重和特征解释模型的输出，这是模型可解释性的一个例子。
+
+Design for amplified decision-making is a design principle that supports decision-makers in making decisions carefully in high-pressure environments by using technology.
+放大决策设计是一种设计原则，它利用技术支持决策者在高压环境下谨慎地做出决策。
+
+The design for unbiased decision-making principle focuses on reducing bias. 
+无偏见决策原则的设计侧重于减少偏见。
+
+The design for human and AI learning focuses on creating better AI systems. 
+人类和人工智能学习的设计重点是创建更好的人工智能系统。
