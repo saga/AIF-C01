@@ -21,5 +21,14 @@ AI 治理提供了指导流程和制度机制，以帮助确保 AI 从研发 （
 
 
 Explainability empowers users to verify system functionality, check for unwanted biases, increase useful human control, and place appropriate trust in AI systems. This dimension of AI promotes the responsible development and deployment of AI technology for the benefit of society. Without explainability, AI could lose public trust because of inscrutable failures.
-
 可解释性使用户能够验证系统功能、检查不需要的偏差、增加有用的人工控制，并适当信任 AI 系统。AI 的这一维度促进了 AI 技术的负责任开发和部署，以造福社会。如果没有可解释性，AI 可能会因难以捉摸的失败而失去公众信任。
+
+SageMaker Clarify provides purpose-built tools to gain greater insights into ML models and data based on metrics such as accuracy, robustness, toxicity, and bias to improve model quality and support responsible AI initiatives.
+SageMaker Clarify 提供专门构建的工具，以根据准确性、稳健性、毒性和偏差等指标更深入地了解 ML 模型和数据，从而提高模型质量并支持负责任的 AI 计划。
+
+Monitoring is important to maintain high-quality ML models and help ensure accurate predictions. SageMaker Model Monitor automatically detects and alerts users to inaccurate predictions from deployed models. With Amazon A2I, users can implement a human review of ML predictions when human oversight is needed.
+监控对于维护高质量的 ML 模型并帮助确保准确预测非常重要。SageMaker Model Monitor 会自动检测已部署模型的不准确预测并提醒用户。借助 Amazon A2I，用户可以在需要人工监督时对 ML 预测进行人工审核。
+
+With Model Evaluation on Amazon Bedrock, the team can evaluate, compare, and select the best foundation model for their use case. With Guardrails for Amazon Bedrock, the team can implement safeguards for their generative AI applications. It can help to filter out any harmful content.
+借助 Amazon Bedrock 上的模型评估，团队可以评估、比较和选择适合其使用案例的最佳基础模型。借助 Amazon Bedrock 的 Guardrails，该团队可以为其生成式 AI 应用程序实施保护措施。它可以帮助过滤掉任何有害内容。
+
