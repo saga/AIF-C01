@@ -74,3 +74,24 @@ Model deployment (inference and prediction) 模型部署（推理和预测）
 Model monitoring  模型监控
 
 Model retraining  模型再训练
+
+
+尽管人工评估被认为是黄金标准，但自动化指标可以提供一种快速且可扩展的方法来评估基础模型性能。这些指标通常衡量模型输出的特定方面，例如：
+
+Perplexity (a measure of how well the model predicts the next token) Perplexity（衡量模型预测下一个标记的程度）
+
+BLEU score (for evaluating machine translation) BLEU 分数（用于评估机器翻译）
+
+F1 score (for evaluating classification or entity recognition tasks) F1 分数（用于评估分类或实体识别任务）
+
+Metrics like ROUGE, BLEU, and BERTScore provide an initial assessment of the foundation model's capabilities. ROUGE、BLEU 和 BERTScore 等指标提供了对基础模型功能的初步评估。
+
+Recall-Oriented Understudy for Gisting Evaluation (ROUGE) is a set of metrics used for evaluating automatic summarization and machine translation systems. It measures the quality of a generated summary or translation by comparing it to one or more reference summaries or translations.
+用于 Gisting Evaluation 的 Recall-Oriented Understudy （ROUGE） 是一组用于评估自动摘要和机器翻译系统的指标。它通过与一个或多个参考摘要或翻译进行比较来衡量生成的摘要或翻译的质量。
+
+Bilingual Evaluation Understudy (BLEU) is a metric used to evaluate the quality of machine-generated text, particularly in the context of machine translation. It measures the similarity between a generated text and one or more reference translations, considering both precision and brevity.
+双语评估替补 （BLEU） 是用于评估机器生成文本质量的指标，尤其是在机器翻译的背景下。它衡量生成的文本与一个或多个参考翻译之间的相似性，同时考虑精度和简洁性。
+
+BERTScore is a metric that evaluates the semantic similarity between a generated text and one or more reference texts. It uses pre-trained Bidirectional Encoder Representations from Transformers (BERT) models to compute contextualized embeddings for the input texts, and then calculates the cosine similarity between them.
+BERTScore 是一个指标，用于评估生成的文本与一个或多个参考文本之间的语义相似性。它使用预先训练的 Bidirectional Encoder Representations from Transformers （BERT） 模型来计算输入文本的上下文化嵌入，然后计算它们之间的余弦相似度。
+
