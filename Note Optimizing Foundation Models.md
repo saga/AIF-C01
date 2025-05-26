@@ -249,6 +249,15 @@ BERTScore 越来越多地与 BLEU 和 ROUGE 等传统指标一起使用，以更
 https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748246400/ioosFlBVrQW10J9qBeI0Ag/tincan/914789_1717713712_o_1hvnrdq96oal1nua1bo61jun11ppb_zip/assets/modeleval2%403x.png
 
 
+### Quiz
+
+You are evaluating the performance of a language generation model on various text generation tasks, such as machine translation, summarization, and open-ended text generation. To assess the quality of the generated text, you need to choose an appropriate evaluation metric that can capture the semantic similarity between the model's output and human-generated reference texts.
+您正在评估语言生成模型在各种文本生成任务 （如机器翻译、摘要和开放式文本生成） 上的性能。要评估生成文本的质量，您需要选择一个适当的评估指标，该指标可以捕获模型输出与人工生成的参考文本之间的语义相似性。
+
+Based on the information provided, which evaluation metric would be the most suitable for this scenario?
+根据提供的信息，哪种评估指标最适合此方案？
+
+**BERTScore**
 
 ## title1
 
