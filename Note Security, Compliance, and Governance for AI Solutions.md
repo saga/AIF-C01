@@ -965,6 +965,24 @@ The data engineering lifecycle is an iterative process where the data is collect
 https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748250000/59IiX6zQSsjBq4gNJssw4g/tincan/1795780_1717163965_o_1hv7f4vju9ubfr0g3t1lv71pvb_zip/assets/DataEngineeringLifeCycle-Final.png
 
 
+## Quiz
 
+AWS provides several services and features for securing artificial intelligence (AI) systems.
+AWS 提供了多种服务和功能来保护人工智能 （AI） 系统。
 
+How should a security administrator best approach the planning of a security strategy for new and future AI solutions? 
+安全管理员应如何最好地为新的和未来的 AI 解决方案规划安全策略？
 
+1. Begin by understanding the AWS Shared Responsibility Model and consider which security services they will need for their solutions.
+首先了解 AWS 责任共担模型，并考虑他们的解决方案需要哪些安全服务。
+
+2. Start with Amazon SageMaker Role Manager to determine which preconfigured role personas they will require for their solutions.
+从 Amazon SageMaker Role Manager 开始，确定他们的解决方案需要哪些预配置的角色角色。
+
+3. First use Amazon Macie to discover sensitive data and identify data security risks.
+首先使用 Amazon Macie 发现敏感数据并识别数据安全风险。
+
+4. Review the Generative AI Security Scoping Matrix to identify the scope of each application in the AI solution.
+查看生成式 AI 安全范围矩阵，以确定 AI 解决方案中每个应用程序的范围。
+
+should be 1.
