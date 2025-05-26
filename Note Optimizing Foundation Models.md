@@ -104,9 +104,157 @@ In practice, a combination of both human evaluation and benchmark datasets is of
 在实践中，通常使用人工评估和基准数据集的组合来提供模型性能的全面概述。尽管基准数据集可以量化模型的技术能力，但人工评估带来了一个重要的以人为本的视角，而基准无法单独捕捉到这一点。这种组合方法确保模型不仅技术熟练，而且有效且参与实际场景。
 
 
+## Fine-Tuning  微调
+
+Although foundation models are highly versatile, they often require fine-tuning to tailor their broad capabilities to specific applications or to enhance their performance in particular domains. Fine-tuning is critical because it helps to do the following:
+尽管基础模型用途广泛，但它们通常需要进行微调，以便为特定应用程序定制其广泛的功能，或增强它们在特定领域的性能。微调至关重要，因为它有助于执行以下作：
+
+- Increase specificity: Adapt the model’s responses or predictions to the nuances of a specific domain or task that were not adequately covered in the initial training.
+提高特异性：根据初始训练中未充分涵盖的特定领域或任务的细微差别调整模型的响应或预测。
+
+- Improve accuracy: Enhance the model's performance on specialized tasks by training on domain-specific data, thereby reducing errors that occur due to the generic nature of foundational training.
+提高准确性：通过对特定于领域的数据进行训练，提高模型在专业任务上的性能，从而减少由于基础训练的通用性质而发生的错误。
+
+- Reduce biases: Address and mitigate any biases inherent in the initial training data, making the model more fair and appropriate for different applications.
+减少偏差：解决并减轻初始训练数据中固有的任何偏差，使模型更加公平并适用于不同的应用程序。
+
+- Boost efficiency: Streamline the model’s operations within specific contexts, potentially reducing computational requirements and speeding up response times.
+提高效率：简化模型在特定上下文中的作，从而可能减少计算要求并加快响应时间。
+
+### The different fine-tuning approaches
+不同的微调方法
+
+- Instruction tuning: This approach involves retraining the model on a new dataset that consists of prompts followed by the desired outputs. This is structured in a way that the model learns to follow specific instructions better. This method is particularly useful for improving the model's ability to understand and execute user commands accurately, making it highly effective for interactive applications like virtual assistants and chatbots. 
+指令调整：此方法涉及在新数据集上重新训练模型，该数据集由提示和所需的输出组成。其结构方式使模型学会更好地遵循特定指令。这种方法对于提高模型准确理解和执行用户命令的能力特别有用，使其对于虚拟助手和聊天机器人等交互式应用程序非常有效。
+
+- Reinforcement learning from human feedback (RLHF): This approach is a fine-tuning technique where the model is initially trained using supervised learning to predict human-like responses. Then, it is further refined through a reinforcement learning process, where a reward model built from human feedback guides the model toward generating more preferable outputs. This method is effective in aligning the model’s outputs with human values and preferences, thereby increasing its practical utility in sensitive applications.
+来自人类反馈的强化学习 （RLHF）：这种方法是一种微调技术，其中模型最初使用监督学习进行训练，以预测类似人类的反应。然后，通过强化学习过程进一步完善它，其中根据人类反馈构建的奖励模型指导模型生成更可取的输出。这种方法可以有效地使模型的输出与人类价值观和偏好保持一致，从而提高其在敏感应用中的实际实用性。
+
+https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748246400/ioosFlBVrQW10J9qBeI0Ag/tincan/914789_1717713712_o_1hvnrdq96oal1nua1bo61jun11ppb_zip/assets/finetuning%403x.png
+
+RLHF refers to the improvement of the model by learning from feedback, such as ratings, preferences, demonstrations, helpfulness, or toxicity, provided by humans. RLHF is used during the pretraining phase of the model but can also be used to fine-tune the model.
+RLHF 是指通过从人类提供的反馈（例如评级、偏好、演示、帮助性或毒性）中学习来改进模型。RLHF 在模型的预训练阶段使用，但也可用于微调模型。
+
+- Adapting models for specific domains: This approach involves fine-tuning the model on a corpus of text or data that is specific to a particular industry or sector.  An example of this would be legal documents for a legal AI or medical records for a healthcare AI. This specificity enables the model to perform with a higher degree of relevance and accuracy in domain-specific tasks, providing more useful and context-aware responses.
+为特定领域调整模型：这种方法涉及在特定于特定行业或部门的文本或数据语料库上微调模型。这方面的一个例子是法律 AI 的法律文档或医疗保健 AI 的医疗记录。这种特异性使模型能够在特定于域的任务中以更高的相关性和准确性执行，从而提供更有用和上下文感知的响应。
+
+- Transfer learning: This approach is a method where a model developed for one task is reused as the starting point for a model on a second task. For foundational models, this often means taking a model that has been trained on a vast, general dataset, then fine-tuning it on a smaller, specific dataset. This method is highly efficient in using learned features and knowledge from the general training phase and applying them to a narrower scope with less additional training required.
+迁移学习：这种方法是为一项任务开发的模型作为第二个任务的模型的起点。对于基础模型，这通常意味着采用已在大型通用数据集上训练的模型，然后在较小的特定数据集上对其进行微调。这种方法可以非常有效地使用从一般训练阶段学到的特征和知识，并将它们应用于更狭窄的范围，所需的额外培训更少。
+
+- Continuous pretraining: This approach involves extending the training phase of a pre-trained model by continuously feeding it new and emerging data. This approach is used to keep the model updated with the latest information, vocabulary, trends, or research findings, ensuring its outputs remain relevant and accurate over time. 
+持续预训练：这种方法涉及通过不断向预训练模型提供新的和新兴的数据来扩展预训练模型的训练阶段。这种方法用于使模型保持最新信息、词汇、趋势或研究结果的更新，确保其输出随着时间的推移保持相关性和准确性。
+
+
+### Preparing the data for the fine-tuning step
+为微调步骤准备数据
+
+During the initial training phase, a foundational model is trained on a vast and diverse dataset. This dataset typically encompasses a wide range of topics to develop a broad understanding and general capabilities. The goals during this phase are as follows:
+在初始训练阶段，基础模型在庞大而多样化的数据集上进行训练。此数据集通常包含广泛的主题，以发展广泛的理解和一般能力。此阶段的目标如下：
+
+- Extensive coverage: Ensuring the dataset covers a broad spectrum of knowledge to give the model a robust foundational understanding
+覆盖范围广：确保数据集涵盖广泛的知识范围，为模型提供可靠的基础理解
+
+- Diversity: Including varied types of data from numerous sources to equip the model with the ability to handle a wide array of tasks
+多样性：包括来自众多来源的各种类型的数据，使模型能够处理各种任务
+
+- Generalization: Focusing on building a model that can generalize across different tasks and domains without specific tailoring
+泛化：专注于构建一个可以跨不同任务和领域泛化的模型，而无需进行特定定制
+
+Data preparation for this phase involves collecting as much data as possible. The data is often from publicly available sources, curated datasets, and sometimes proprietary data, depending on the model's intended usage. The data needs thorough cleaning and possibly anonymization to ensure privacy and compliance with regulations.
+此阶段的数据准备涉及收集尽可能多的数据。数据通常来自公开可用的来源、精选数据集，有时还来自专有数据，具体取决于模型的预期用途。数据需要彻底清理，并可能进行匿名化处理，以确保隐私并遵守法规。
+
+### Data preparation for fine-tuning
+用于微调的数据准备
+
+Fine-tuning, on the other hand, is a more targeted process where a pretrained model is adapted to perform well on a specific task or within a particular domain. The data preparation for fine-tuning is distinct from initial training due to the following reasons:
+另一方面，微调是一个更具针对性的过程，其中预训练模型经过调整，以便在特定任务或特定领域内表现良好。由于以下原因，用于微调的数据准备与初始训练不同：
+
+- Specificity: The dataset for fine-tuning is much more focused, containing examples that are directly relevant to the specific tasks or problems the model needs to solve.
+特异性：用于微调的数据集更加集中，包含与模型需要解决的特定任务或问题直接相关的示例。
+
+- High relevance: Data must be highly relevant to the desired outputs. Examples include legal documents for a legal AI or customer service interactions for a customer support AI.
+高相关性：数据必须与所需的输出高度相关。示例包括法律 AI 的法律文档或客户支持 AI 的客户服务交互。
+
+- Quality over quantity: Although the initial training requires massive amounts of data, fine-tuning can often achieve significant improvements with much smaller, but well-curated datasets.
+质量胜于数量：尽管初始训练需要大量数据，但微调通常可以使用更小但精心策划的数据集实现显著改进。
+
+
+### Key steps in fine-tuning data preparation
+微调数据准备的关键步骤
+
+The following list walks through the key steps in fine-tuning data preparation:
+以下列表介绍了微调数据准备的关键步骤：
+
+1. Data curation: Although it is a continuation, this involves a more rigorous selection process to ensure every piece of data is highly relevant. This step also ensures the data contributes to the model's learning in the specific context.
+数据管理：虽然这是一个延续，但这涉及更严格的选择过程，以确保每条数据都高度相关。此步骤还确保数据有助于模型在特定上下文中的学习。
+
+2. Labeling: In fine-tuning, the accuracy and relevance of labels are paramount. They guide the model's adjustments to specialize in the target domain.
+标签：在微调中，标签的准确性和相关性至关重要。它们指导模型的调整以专注于目标域。
+
+3. Governance and compliance: Considering fine-tuning often uses more specialized data, ensuring data governance and compliance with industry-specific regulations is critical.
+治理和合规性：考虑到微调通常会使用更专业的数据，因此确保数据治理和遵守行业特定法规至关重要。
+
+4. Representativeness and bias checking: It is essential to ensure that the fine-tuning dataset does not introduce or perpetuate biases that could skew the model's performance in undesirable ways.
+代表性和偏差检查：必须确保微调数据集不会引入或延续可能以不良方式扭曲模型性能的偏差。
+
+5. Feedback integration: For methods like RLHF, incorporating user or expert feedback directly into the training process is crucial. This is more nuanced and interactive than the initial training phase.
+反馈集成：对于 RLHF 等方法，将用户或专家反馈直接纳入培训过程至关重要。这比初始培训阶段更加细致和互动。
+
+
+## Model evaluation  模型评估
+
+When evaluating the performance of language models, especially those involved in generating or transforming text, specific metrics can be used. These metrics are made to assess the quality of the output, compared to a human-written standard. Three commonly used metrics for this purpose are Recall-Oriented Understudy for Gisting Evaluation (ROUGE), Bilingual Evaluation Understudy (BLEU), and BERTScore.
+在评估语言模型的性能时，尤其是那些涉及生成或转换文本的语言模型，可以使用特定的指标。与人工编写的标准相比，这些指标用于评估输出的质量。用于此目的的三个常用指标是面向召回的 **Gisting 评估 （ROUGE）、双语评估 Understudy （BLEU） 和 BERTScore**。
+
+### ROUGE  
+
+ROUGE is a set of metrics used to evaluate automatic summarization of texts, in addition to machine translation quality in NLP. The main idea behind ROUGE is to count the number of overlapping units. This includes words, N-grams, or sentence fragments between the computer-generated output and a set of reference (human-created) texts.
+ROUGE 是一组指标，用于评估文本的自动摘要，以及 NLP 中的机器翻译质量。ROUGE 背后的主要思想是计算重叠单元的数量。这包括计算机生成的输出和一组参考（人工创建）文本之间的单词、N 元语法或句子片段。
+
+The following are two ways to use the ROUGE metric:
+以下是使用 ROUGE 度量的两种方法：
+
+- ROUGE-N: This metric measures the overlap of n-grams between the generated text and the reference text. For example, ROUGE-1 refers to the overlap of unigrams, ROUGE-2 refers to bigrams, and so on. This metric primarily assesses the fluency of the text and the extent to which it includes key ideas from the reference.
+ROUGE-N：此指标衡量生成的文本和参考文本之间的 n-gram 重叠。例如，ROUGE-1 表示一元语法的重叠，ROUGE-2 表示二元语法，依此类推。该指标主要评估文本的流畅性以及它包含参考文献中关键思想的程度。
+
+- ROUGE-L: This metric uses the longest common subsequence between the generated text and the reference texts. It is particularly good at evaluating the coherence and order of the narrative in the outputs.
+ROUGE-L：此指标使用生成的文本和参考文本之间最长的公共子序列。它特别擅长评估输出中叙述的连贯性和顺序。
+
+ROUGE is widely used because it is not complex. It is interpretable, and correlates reasonably well with human judgment, especially when evaluating the recall aspect of summaries. The evaluations assess how much of the important information in the source texts is captured by the generated summaries.
+ROUGE 被广泛使用，因为它并不复杂。它是可解释的，并且与人类判断有相当好的相关性，尤其是在评估摘要的回忆方面时。评估评估生成的摘要捕获了源文本中多少重要信息。
+
+
+### BLEU  
+
+BLEU is a metric used to evaluate the quality of text that has been machine-translated from one natural language to another. Quality is calculated by comparing the machine-generated text to one or more high-quality human translations. BLEU measures the precision of N-grams in the machine-generated text that appears in the reference texts and applies a penalty for overly short translations (brevity penalty).
+BLEU 是用于评估已从一种自然语言机器翻译为另一种自然语言的文本质量的指标。质量的计算方法是将机器生成的文本与一个或多个高质量的人工翻译进行比较。BLEU 测量参考文本中出现的机器生成文本中 N 元语法的精度，并对过短的翻译进行惩罚（简洁惩罚）。
+
+Unlike ROUGE, which focuses on recall, BLEU is fundamentally a precision metric. It checks how many words or phrases in the machine translation appear in the reference translations. BLEU evaluates the quality at the level of the sentence, typically using a combination of unigrams, bigrams, trigrams, and quadrigrams. A brevity penalty discourages overly concise translations that might influence the precision score.
+与专注于召回率的 ROUGE 不同，BLEU 从根本上说是一个精确指标。它检查机器翻译中有多少单词或短语出现在参考翻译中。BLEU 在句子级别评估质量，通常使用 unigrams、bigrams、trigrams 和 quadrigrams 的组合。简洁性惩罚会阻止可能影响精确率分数的过于简洁的翻译。
+
+BLEU is popular in the field of machine translation for its ease of use and effectiveness at a broad scale. However, it has limitations in assessing the fluency and grammaticality of the output.
+BLEU 因其易用性和广泛的有效性而在机器翻译领域广受欢迎。但是，它在评估输出的流畅性和语法性方面存在局限性。
+
+### The BERTScore
+
+BERTScore uses the pretrained contextual embeddings from models like BERT to evaluate the quality of text-generation tasks. BERTScore computes the cosine similarity between the contextual embeddings of words in the candidate and the reference texts. This is unlike traditional metrics that rely on exact matches of N-grams or words.
+BERTScore 使用来自 BERT 等模型的预训练上下文嵌入来评估文本生成任务的质量。BERTScore 计算候选文本和参考文本中单词的上下文嵌入之间的余弦相似度。这与依赖于 N-gram 或单词的精确匹配的传统指标不同。
+
+Because BERTScore evaluates the semantic similarity rather than relying on exact lexical matches, it is capable of capturing meaning in a more nuanced manner. BERTScore is less prone to some of the pitfalls of BLEU and ROUGE. An example of this is their sensitivity to minor paraphrasing or synonym usage that does not affect the overall meaning conveyed by the text.
+由于 BERTScore 评估语义相似性而不是依赖于精确的词汇匹配，因此它能够以更细致的方式捕获含义。BERTScore 不太容易受到 BLEU 和 ROUGE 的一些陷阱的影响。这方面的一个例子是他们对不影响文本传达的整体含义的次要释义或同义词使用的敏感性。
+
+BERTScore is increasingly used alongside traditional metrics like BLEU and ROUGE for a more comprehensive assessment of language generation models. This is especially true in cases where capturing the deeper semantic meaning of the text is important.
+BERTScore 越来越多地与 BLEU 和 ROUGE 等传统指标一起使用，以更全面地评估语言生成模型。在捕获文本的更深层次语义很重要的情况下尤其如此。
+
+https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748246400/ioosFlBVrQW10J9qBeI0Ag/tincan/914789_1717713712_o_1hvnrdq96oal1nua1bo61jun11ppb_zip/assets/modeleval2%403x.png
+
 
 
 ## title1
+
+
+## title1
+
 
 ***
 
