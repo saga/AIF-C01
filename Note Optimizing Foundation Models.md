@@ -209,7 +209,7 @@ When evaluating the performance of language models, especially those involved in
 ### ROUGE  
 
 ROUGE is a set of metrics used to evaluate automatic summarization of texts, in addition to machine translation quality in NLP. The main idea behind ROUGE is to count the number of overlapping units. This includes words, N-grams, or sentence fragments between the computer-generated output and a set of reference (human-created) texts.
-ROUGE 是一组指标，用于评估文本的自动摘要，以及 NLP 中的机器翻译质量。ROUGE 背后的主要思想是计算重叠单元的数量。这包括计算机生成的输出和一组参考（人工创建）文本之间的单词、N 元语法或句子片段。
+**ROUGE 是一组指标，用于评估文本的自动摘要，以及 NLP 中的机器翻译质量**。ROUGE 背后的主要思想是计算重叠单元的数量。这包括计算机生成的输出和一组参考（人工创建）文本之间的单词、N 元语法或句子片段。
 
 The following are two ways to use the ROUGE metric:
 以下是使用 ROUGE 度量的两种方法：
@@ -227,7 +227,7 @@ ROUGE 被广泛使用，因为它并不复杂。它是可解释的，并且与�
 ### BLEU  
 
 BLEU is a metric used to evaluate the quality of text that has been machine-translated from one natural language to another. Quality is calculated by comparing the machine-generated text to one or more high-quality human translations. BLEU measures the precision of N-grams in the machine-generated text that appears in the reference texts and applies a penalty for overly short translations (brevity penalty).
-BLEU 是用于评估已从一种自然语言机器翻译为另一种自然语言的文本质量的指标。质量的计算方法是将机器生成的文本与一个或多个高质量的人工翻译进行比较。BLEU 测量参考文本中出现的机器生成文本中 N 元语法的精度，并对过短的翻译进行惩罚（简洁惩罚）。
+**BLEU 是用于评估已从一种自然语言机器翻译为另一种自然语言的文本质量的指标**。质量的计算方法是将机器生成的文本与一个或多个高质量的人工翻译进行比较。BLEU 测量参考文本中出现的机器生成文本中 N 元语法的精度，并对过短的翻译进行惩罚（简洁惩罚）。
 
 Unlike ROUGE, which focuses on recall, BLEU is fundamentally a precision metric. It checks how many words or phrases in the machine translation appear in the reference translations. BLEU evaluates the quality at the level of the sentence, typically using a combination of unigrams, bigrams, trigrams, and quadrigrams. A brevity penalty discourages overly concise translations that might influence the precision score.
 与专注于召回率的 ROUGE 不同，BLEU 从根本上说是一个精确指标。它检查机器翻译中有多少单词或短语出现在参考翻译中。BLEU 在句子级别评估质量，通常使用 unigrams、bigrams、trigrams 和 quadrigrams 的组合。简洁性惩罚会阻止可能影响精确率分数的过于简洁的翻译。
@@ -241,7 +241,7 @@ BERTScore uses the pretrained contextual embeddings from models like BERT to eva
 BERTScore 使用来自 BERT 等模型的预训练上下文嵌入来评估文本生成任务的质量。BERTScore 计算候选文本和参考文本中单词的上下文嵌入之间的余弦相似度。这与依赖于 N-gram 或单词的精确匹配的传统指标不同。
 
 Because BERTScore evaluates the semantic similarity rather than relying on exact lexical matches, it is capable of capturing meaning in a more nuanced manner. BERTScore is less prone to some of the pitfalls of BLEU and ROUGE. An example of this is their sensitivity to minor paraphrasing or synonym usage that does not affect the overall meaning conveyed by the text.
-由于 BERTScore 评估语义相似性而不是依赖于精确的词汇匹配，因此它能够以更细致的方式捕获含义。BERTScore 不太容易受到 BLEU 和 ROUGE 的一些陷阱的影响。这方面的一个例子是他们对不影响文本传达的整体含义的次要释义或同义词使用的敏感性。
+由于 **BERTScore 评估语义相似性而不是依赖于精确的词汇匹配**，因此它能够以更细致的方式捕获含义。BERTScore 不太容易受到 BLEU 和 ROUGE 的一些陷阱的影响。这方面的一个例子是他们对不影响文本传达的整体含义的次要释义或同义词使用的敏感性。
 
 BERTScore is increasingly used alongside traditional metrics like BLEU and ROUGE for a more comprehensive assessment of language generation models. This is especially true in cases where capturing the deeper semantic meaning of the text is important.
 BERTScore 越来越多地与 BLEU 和 ROUGE 等传统指标一起使用，以更全面地评估语言生成模型。在捕获文本的更深层次语义很重要的情况下尤其如此。
