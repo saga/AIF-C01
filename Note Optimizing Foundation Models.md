@@ -43,13 +43,67 @@ Amazon Aurora PostgreSQL 兼容版中的 pgvector 扩展
 
 - Amazon Kendra  亚马逊肯德拉
 
-## title1
+## Key functions of agents  代理的主要功能
+
+Agents can serve different roles in a generative AI application, such as the following:
+代理可以在生成式 AI 应用程序中担任不同的角色，例如：
+
+- Intermediary operations: Agents can act as intermediaries, facilitating communication between the generative AI model and various backend systems. The generative AI model handles language understanding and response generation. The various backend systems include items such as databases, CRM platforms, or service management tools.
+中介作：代理可以充当中介，促进生成式 AI 模型与各种后端系统之间的通信。生成式 AI 模型处理语言理解和响应生成。各种后端系统包括数据库、CRM 平台或服务管理工具等项目。
+
+- Actions launch: Agents can be used to run a wide variety of tasks. These tasks might include adjusting service settings, processing transactions, retrieving documents, and more. These actions are based on the users' specific needs understood by the generative AI model.
+作启动：代理可用于运行各种任务。这些任务可能包括调整服务设置、处理交易、检索文档等。这些作基于生成式 AI 模型所理解的用户特定需求。
+
+- Feedback integration: Agents can also contribute to the AI system's learning process by collecting data on the outcomes of their actions. This feedback helps refine the AI model, enhancing its accuracy and effectiveness in future interactions.
+反馈集成：代理还可以通过收集有关其作结果的数据来为 AI 系统的学习过程做出贡献。此反馈有助于改进 AI 模型，提高其在未来交互中的准确性和有效性。
+
+https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748246400/ioosFlBVrQW10J9qBeI0Ag/tincan/914789_1717713712_o_1hvnrdq96oal1nua1bo61jun11ppb_zip/assets/agentsdiagram%403x.png
 
 
-## title1
+
+## Evaluate results  评估结果
+
+Evaluating the performance of generative AI models is critical for understanding their effectiveness and ensuring they meet indented objectives. Two of the most common evaluation methods are human evaluation and the use of benchmark datasets. Each method provides unique insights and is suitable for different aspects of model performance assessment.
+评估生成式 AI 模型的性能对于了解其有效性并确保它们满足缩进目标至关重要。两种最常见的评估方法是人工评估和使用基准数据集。每种方法都提供了独特的见解，适用于模型性能评估的不同方面。
 
 
-## title1
+### Human evaluation  人工评估
+
+Human evaluation involves real users interacting with the AI model to provide feedback based on their experience. This method is particularly valuable for assessing qualitative aspects of the model, such as the following:
+人工评估涉及真实用户与 AI 模型交互，以根据他们的体验提供反馈。此方法对于评估模型的定性方面特别有价值，例如：
+
+- User experience: How intuitive and satisfying is the interaction with the model from the user's perspective?
+用户体验：从用户的角度来看，与模型的交互有多直观和令人满意？
+
+- Contextual approriateness: Does the model respond in a way that is contextually relevant and sensitive to the nuances of human communication?
+情境适应性：模型是否以一种与情境相关且对人类交流的细微差别敏感的方式做出回应？
+
+- Creativity and flexibility: How well does the model handle unexpected queries or complex scenarios that require a nuanced understanding?
+创造力和灵活性：模型处理需要细致入微理解的意外查询或复杂场景的能力如何？
+
+### Benchmark datasets  对数据集进行基准测试
+
+Benchmark datasets, on the other hand, provide a quantitative way to evaluate generative AI models. These datasets consist of predefined datasets and associated metrics that offer a consistent, objective means to measure model performances. This might include the following:
+另一方面，基准测试数据集提供了一种评估生成式 AI 模型的定量方法。这些数据集由预定义的数据集和相关指标组成，这些指标为衡量模型性能提供了一致、客观的方法。这可能包括以下内容：
+
+- Accuracy: How accurately does the model perform specific tasks according to predefined standards?
+准确性：模型根据预定义标准执行特定任务的准确度如何？
+
+- Speed and efficiency: How quickly does the mode generate responses and how does this impact operational efficiency?
+速度和效率：该模式生成响应的速度有多快，这对运营效率有何影响？
+
+- Scalability: Can the mode maintain its performance as the scale of data or number of users increases?
+可扩展性：随着数据规模或用户数量的增加，该模式能否保持其性能？
+
+Benchmark datasets are particularly useful for initial testing phases to ensure that the model meets certain technical specifications before it is put through more subjective human evaluations. They are also essential for comparing performance across different models or different iterations of the same model.
+基准测试数据集对于初始测试阶段特别有用，以确保模型在经过更主观的人工评估之前满足某些技术规范。它们对于比较不同模型或同一模型的不同迭代的性能也是必不可少的。
+
+### Combined approach  组合方法
+
+In practice, a combination of both human evaluation and benchmark datasets is often used to provide a comprehensive overview of a model's performance. Although benchmark datasets can quantify the model's technical capabilities, human evaluation brings an essential human-centric perspective that benchmarks cannot capture alone. This combined approach ensures that the model is not only technically proficient but also effective and engaging in real-world scenarios.
+在实践中，通常使用人工评估和基准数据集的组合来提供模型性能的全面概述。尽管基准数据集可以量化模型的技术能力，但人工评估带来了一个重要的以人为本的视角，而基准无法单独捕捉到这一点。这种组合方法确保模型不仅技术熟练，而且有效且参与实际场景。
+
+
 
 
 ## title1
