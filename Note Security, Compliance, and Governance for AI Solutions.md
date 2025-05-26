@@ -489,6 +489,143 @@ Data retention policies define how long data should be kept for AI workloads. Th
 Effective data retention strategies can help organizations manage the lifecycle of data used in their AI systems.
 有效的数据保留策略可以帮助组织管理其 AI 系统中使用的数据的生命周期。
 
-## x
+## Approaches to governance strategies
+治理策略的方法
+
+When working with generative AI solutions, it's important to establish and follow governance strategies to ensure responsible development and deployment. The following are some key approaches to consider.
+使用生成式 AI 解决方案时，必须制定并遵循治理策略，以确保负责任的开发和部署。以下是需要考虑的一些关键方法。
+
+### Policies  政策
+
+Develop clear and comprehensive policies that outline the organization's approach to generative AI, including principles, guidelines, and responsible AI considerations. Here are some common characteristics of policies:
+制定清晰而全面的政策，概述组织的生成式 AI 方法，包括原则、指南和负责任的 AI 注意事项。以下是策略的一些常见特征：
+
+- Policies should address areas such as data management, model training, output validation, safety, and human oversight.
+策略应涉及数据管理、模型训练、输出验证、安全和人工监督等领域。
+
+- Policies should also cover aspects like intellectual property, bias mitigation, and privacy protection.
+政策还应涵盖知识产权、减少偏见和隐私保护等方面。
+
+- Ensure these policies are regularly reviewed and updated to keep pace with evolving technology and regulatory requirements.
+确保定期审查和更新这些政策，以跟上不断发展的技术和法规要求。
+
+### Review cadence  审阅节奏
+
+Implement a regular review process to assess the performance, safety, and responsible AI implications of the generative AI solutions. Here are some common tasks to include in the review process:
+实施定期审核流程，以评估生成式 AI 解决方案的性能、安全性和负责任的 AI 影响。以下是审核流程中要包含的一些常见任务：
+
+- The review process could involve a combination of technical, legal, and responsible AI reviews at different stages of the development and deployment lifecycle.
+审核流程可能涉及开发和部署生命周期不同阶段的技术、法律和负责任的 AI 审核的组合。
+
+- Establish a clear timeline for these reviews, such as monthly, quarterly, or bi-annually, depending on the complexity and risk profile of the solutions.
+为这些审核建立明确的时间表，例如每月、每季度或每半年一次，具体取决于解决方案的复杂性和风险状况。
+
+- Ensure that the review process includes diverse perspectives from stakeholders, including subject matter experts, legal and compliance teams, and end-users.
+确保审核流程包括来自利益相关者的不同观点，包括主题专家、法律和合规团队以及最终用户。
+
+### Review strategies  评审策略
+
+Develop comprehensive review strategies that cover both technical and non-technical aspects of the generative AI solutions. Here is some suggested guidance for a review strategy:
+制定全面的审查策略，涵盖生成式 AI 解决方案的技术和非技术方面。以下是针对审核策略的一些建议指南：
+
+- Technical reviews should focus on model performance, data quality, and the robustness of the underlying algorithms.
+技术审查应侧重于模型性能、数据质量和底层算法的稳健性。
+
+- Non-technical reviews should assess the solutions' alignment with organizational policies, responsible AI principles, and regulatory requirements.
+非技术审核应评估解决方案是否符合组织策略、负责任的 AI 原则和法规要求。
+
+- Incorporate testing and validation procedures to validate the outputs of the generative AI solutions before deployment.
+在部署之前，整合测试和验证程序以验证生成式 AI 解决方案的输出。
+
+- Establish clear decision-making frameworks to determine when and how to intervene or modify the solutions based on the review findings.
+建立明确的决策框架，以根据审查结果确定何时以及如何干预或修改解决方案。
+
+### Transparency standards  透明度标准
+
+Commit to maintaining high standards of transparency in the development and deployment of generative AI solutions by ensuring the following:
+通过确保以下几点，承诺在生成式 AI 解决方案的开发和部署中保持高标准的透明度：
+
+- Include publishing information about the AI models, their training data, and the key decisions made during the development process.
+包括发布有关 AI 模型、其训练数据以及开发过程中做出的关键决策的信息。
+
+- Provide clear and accessible documentation on the capabilities, limitations, and intended use cases of the generative AI solutions.
+提供有关生成式 AI 解决方案的功能、限制和预期用例的清晰易懂的文档。
+
+- Establish channels for stakeholders, including end-users, to provide feedback and raise concerns about the solutions.
+为利益相关者（包括最终用户）建立渠道，以提供反馈并提出对解决方案的担忧。
+
+### Team training requirements
+团队培训要求
+
+Ensure that all team members involved in the development and deployment of generative AI solutions are adequately trained on relevant policies, guidelines, and best practices. Some suggestions for team training include the following:
+确保参与生成式 AI 解决方案开发和部署的所有团队成员都接受了相关政策、指南和最佳实践方面的充分培训。团队培训的一些建议包括：
+
+- Provide comprehensive training on bias mitigation, and responsible AI practices.
+提供有关减少偏见和负责任的 AI 实践的全面培训。
+
+- Encourage cross-functional collaboration and knowledge-sharing to foster a culture of responsible AI development.
+鼓励跨职能协作和知识共享，以培养负责任的 AI 开发文化。
+
+- Consider implementing ongoing training and certification programs to keep team members up to date with the latest advancements and regulatory changes.
+考虑实施持续的培训和认证计划，让团队成员了解最新的进展和法规变化。
+
+
+## Monitoring an AI system  监视 AI 系统
+
+Monitoring  监测
+
+Monitoring an AI system is necessary to ensure its performance, reliability, and compliance with the intended use case. Effective monitoring can help identify issues, optimize system performance, and maintain overall system health. 
+监控 AI 系统对于确保其性能、可靠性和符合预期用例是必要的。有效的监控有助于识别问题、优化系统性能并保持整体系统运行状况。
+
+The following are some key aspects to consider when monitoring an AI system.
+以下是监控 AI 系统时需要考虑的一些关键方面。
+
+### Performance metrics  性能指标
+
+Monitor the performance of the AI system by tracking metrics, such as the following:
+通过跟踪指标来监控 AI 系统的性能，例如：
+
+- Model accuracy: The proportion of correct predictions made by the model
+模型准确率：模型做出的正确预测的比例
+
+- Precision: The ratio of true positive predictions to the total number of positive predictions made by the model
+精度：真阳性预测与模型所做的阳性预测总数的比率
+
+- Recall: The ratio of true positive predictions to the total number of actual positive instances in the data
+召回率：真阳性预测与数据中实际正实例总数的比率
+
+- F1-score: The harmonic mean of precision and recall, which provides a balanced measure of model performance
+F1 分数：精确率和召回率的调和平均值，提供模型性能的平衡度量
+
+- Latency: The time taken by the model to make a prediction, which is an important measure of a model's practical performance
+延迟：模型进行预测所花费的时间，这是衡量模型实际性能的重要指标
+
+### Infrastructure monitoring
+基础设施监控
+
+Monitor the underlying infrastructure that supports the AI system, including the following: 
+监控支持 AI 系统的底层基础设施，包括以下内容：
+
+- Compute resources (for example, CPU, memory, GPU)
+计算资源（例如 CPU、内存、GPU）
+- Network performance  网络性能
+- Storage  存储
+- System logs  系统日志
+
+This can help you identify resource bottlenecks, capacity planning issues, and potential system failures.
+这可以帮助您识别资源瓶颈、容量规划问题和潜在的系统故障。
+
+### Monitoring for bias and fairness
+监控偏见和公平性
+
+Regularly assess the AI system for potential biases and unfair outcomes, especially in sensitive domains such as healthcare, finance, and HR. This can help ensure the AI system is making fair and unbiased decisions.
+定期评估 AI 系统是否存在潜在的偏见和不公平结果，尤其是在医疗保健、财务和人力资源等敏感领域。这有助于确保 AI 系统做出公平公正的决策。
+
+### Monitoring for compliance and responsible AI
+监控合规性和负责任的 AI
+
+Ensure the AI system's operations and outputs adhere to relevant regulations, industry standards, and responsible guidelines. Monitor for any potential violations or issues that could raise compliance or responsible AI concerns.
+确保 AI 系统的作和输出符合相关法规、行业标准和负责任的准则。监控任何可能引起合规性或负责任的 AI 问题的潜在违规行为或问题。
+
 
 ## x
