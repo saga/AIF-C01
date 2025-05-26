@@ -628,4 +628,16 @@ Ensure the AI system's operations and outputs adhere to relevant regulations, in
 确保 AI 系统的作和输出符合相关法规、行业标准和负责任的准则。监控任何可能引起合规性或负责任的 AI 问题的潜在违规行为或问题。
 
 
-## x
+## Generative AI Security Scoping Matrix 
+生成式 AI 安全范围界定矩阵
+
+You can use the Generative AI Security Scoping Matrix to assist you with application security scoping efforts. This matrix summarizes the key security disciplines that you should consider based on your generative AI solution. Use the matrix to guide you in classifying your applications among the five defined generative AI scopes.
+您可以使用 Generative AI 安全范围界定矩阵来帮助您进行应用程序安全范围界定工作。此矩阵总结了您应该根据生成式 AI 解决方案考虑的关键安全规则。使用该矩阵指导您在五个定义的生成式 AI 范围内对应用程序进行分类。
+
+https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748250000/59IiX6zQSsjBq4gNJssw4g/tincan/1795780_1717163965_o_1hv7f4vju9ubfr0g3t1lv71pvb_zip/assets/GenAI-SecurityScopingMatrix-Final.jpg
+
+
+
+##
+
+
