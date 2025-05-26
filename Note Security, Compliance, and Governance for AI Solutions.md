@@ -387,7 +387,107 @@ Follow these steps to establish governance structures and roles:
 - Provide training and support to artificial intelligence and machine learning (AI/ML) practitioners and data users on data governance best practices.
 为人工智能和机器学习 （AI/ML） 从业者以及数据用户提供有关数据治理最佳实践的培训和支持。
 
+### Data sharing and collaboration
+数据共享和协作
 
+You can manage data sharing and collaboration as follows:
+您可以按如下方式管理数据共享和协作：
+
+- Develop data sharing agreements and protocols to facilitate the secure and controlled exchange of data across organizational boundaries.
+制定数据共享协议和协议，以促进跨组织边界的安全和受控数据交换。
+
+- Implement data virtualization or federation techniques to enable access to distributed data sources without compromising data ownership or control.
+实施数据虚拟化或联合技术，以便在不影响数据所有权或控制权的情况下访问分布式数据源。
+
+- Foster a culture of data-driven decision-making and collaborative data governance across the organization.
+在整个组织内培养数据驱动型决策和协作式数据治理的文化。
+
+
+***
+
+## Concepts in data governance 
+数据治理中的概念
+
+Data management concepts  数据管理概念
+
+The following concepts are all important considerations for the successful management and deployment of AI workloads. They help ensure the quality, integrity, and governance of the data that underpins the development, training, and deployment of AI models.
+以下概念都是成功管理和部署 AI 工作负载的重要注意事项。它们有助于确保支撑 AI 模型开发、训练和部署的数据的质量、完整性和治理。
+
+### Data lifecycles 
+
+refer to the management of data throughout its entire lifespan, from creation to eventual disposal or archiving. In the context of AI workloads, the data lifecycle encompasses the following stages in the lifecycle of data used to train and deploy AI models:
+数据生命周期是指数据在其整个生命周期（从创建到最终处置或存档）中的管理。在 AI 工作负载的上下文中，数据生命周期包括用于训练和部署 AI 模型的数据生命周期中的以下阶段：
+
+- Collection  收集
+- Processing  加工
+- Storage  存储
+- Consumption  消费
+- Disposal or archiving  弃置或存档
+
+### Data logging   数据记录
+
+Data logging involves the systematic recording of data related to the processing of an AI workload. This can include the following: 
+数据日志记录涉及系统地记录与 AI 工作负载处理相关的数据。这可能包括以下内容：
+
+- Tracking inputs  跟踪输入
+- Tracking outputs  跟踪输出
+- Model performance metrics
+模型性能指标
+- System events  系统事件
+
+Effective data logging is necessary for debugging, monitoring, and understanding the behavior of AI systems.
+有效的数据记录对于调试、监控和了解 AI 系统的行为是必要的。
+
+### Data residency  数据驻留
+
+Data residency refers to the physical location where data is stored and processed. In the context of AI workloads, data residency considerations might include the following:
+数据驻留是指存储和处理数据的物理位置。在 AI 工作负载的上下文中，数据驻留注意事项可能包括以下内容：
+
+- Compliance with data privacy regulations
+遵守数据隐私法规
+- Data sovereignty requirements
+数据主权要求
+- Proximity of data to the compute resources used for training and inference
+数据与用于训练和推理的计算资源的接近度
+
+### Data monitoring  数据监控
+
+Data monitoring involves the ongoing observation and analysis of data used in AI workloads. This can include the following: 
+数据监控涉及对 AI 工作负载中使用的数据的持续观察和分析。这可能包括以下内容：
+
+- Monitoring data quality  监控数据质量
+- Identifying anomalies (An anomaly is an unexpected data point that significantly deviates from the norm.)
+识别异常（异常是明显偏离正常的意外数据点。
+- Tracking data drift (Data drift is observed when the distribution of the input data changes over time.)
+跟踪数据偏移（当输入数据的分布随时间变化时，会观察到数据偏移。
+
+Monitoring also helps to ensure that the data being used for training and inference remains relevant and representative.
+监控还有助于确保用于训练和推理的数据保持相关性和代表性。
+
+### Data analysis  数据分析
+
+Data analysis methods are used to understand the characteristics, patterns, and relationships within the data used for AI workloads.
+数据分析方法用于了解用于 AI 工作负载的数据中的特征、模式和关系。
+
+These methods help to gain insights into the data. They include the following: 
+这些方法有助于深入了解数据。它们包括以下内容：
+
+- Statistical analysis  统计分析
+- Data visualization  数据可视化
+- Exploratory data analysis (EDA): EDA is a task to discover patterns, understand relationships, validate assumptions, and identify anomalies in data.
+**探索性数据分析 （EDA）**：EDA 是一项发现模式、了解关系、验证假设和识别数据异常的任务。
+
+### Data retention  数据保留
+Data retention policies define how long data should be kept for AI workloads. This can be influenced by factors such as the following: 
+数据保留策略定义 AI 工作负载的数据应保留多长时间。这可能受到以下因素的影响：
+
+- Regulatory requirements  监管要求
+- Maintaining historical data for model retraining
+维护历史数据以进行模型重新训练
+- Cost of data storage  数据存储成本
+
+Effective data retention strategies can help organizations manage the lifecycle of data used in their AI systems.
+有效的数据保留策略可以帮助组织管理其 AI 系统中使用的数据的生命周期。
 
 ## x
 
