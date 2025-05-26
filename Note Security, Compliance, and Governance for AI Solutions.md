@@ -184,11 +184,152 @@ Some example industries are as follows:
 - Aerospace  航空 航天
 
 
-## x
+## AWS Governance and Compliance
+AWS 监管与合规性
 
-## x
+### AWS Config 
 
-## x
+提供 AWS 账户中 AWS 资源配置的详细视图。这包括资源如何相互关联以及它们过去的配置方式，以便您可以查看配置和关系如何随时间变化。
+
+When you run your applications on AWS, you usually use AWS resources, which you must create and manage collectively. As the demand for your application keeps growing, so does your need to keep track of your AWS resources. The following are some scenarios where AWS Config can help you oversee your application resources:
+当您在 AWS 上运行应用程序时，您通常会使用 AWS 资源，您必须共同创建和管理这些资源。随着对应用程序的需求不断增长，您跟踪 AWS 资源的需求也在不断增长。以下是 AWS Config 可以帮助您监督应用程序资源的一些情况：
+
+- Resource administration: Exercise governance over your resource configurations and detect resource misconfigurations.
+资源管理：对资源配置进行治理并检测资源配置错误。
+
+- Auditing and compliance: You might work with data that requires frequent audits to ensure compliance with internal policies and best practices. AWS Config helps you demonstrate compliance by providing access to the historical configurations of your resources.
+审计和合规性：您可能处理需要频繁审计以确保符合内部策略和最佳实践的数据。AWS Config 通过提供对资源历史配置的访问权限来帮助您证明合规性。
+
+- Managing and troubleshooting configuration changes: You can view how any resource you intend to modify is related to other resources and assess the impact of your change. 
+管理配置更改并对其进行故障排除：您可以查看要修改的任何资源与其他资源的关系，并评估更改的影响。
+
+### Amazon Inspector 
+
+is a vulnerability management service that continuously scans your AWS workloads for software vulnerabilities and unintended network exposure.  
+Amazon Inspector 是一项漏洞管理服务，可持续扫描您的 AWS 工作负载，以发现软件漏洞和意外的网络暴露。
+
+Amazon Inspector automatically discovers and scans running AWS resources for known software vulnerabilities and unintended network exposure. Some of these resources include Amazon Elastic Compute Cloud (Amazon EC2) instances, container images, and Lambda functions. Amazon Inspector creates a finding when it discovers a software vulnerability or network configuration issue. 
+Amazon Inspector 会自动发现并扫描正在运行的 AWS 资源，以查找已知的软件漏洞和意外的网络暴露。其中一些资源包括 Amazon Elastic Compute Cloud （Amazon EC2） 实例、容器映像和 Lambda 函数。Amazon Inspector 在发现软件漏洞或网络配置问题时会创建调查结果。
+
+Some examples of these vulnerabilities include the following:
+这些漏洞的一些示例包括：
+
+- Package vulnerability: There are software packages in your AWS environment that are exposed to common vulnerabilities and exposures (CVEs). 
+软件包漏洞：您的 AWS 环境中存在面临常见漏洞和披露 （CVE） 的软件包。
+
+- Code vulnerability: There are lines in your code that attackers could exploit. Other vulnerabilities include data leaks, weak cryptography, and missing encryption.
+代码漏洞：您的代码中有几行可能会被攻击者利用。其他漏洞包括数据泄露、弱加密和缺失加密。
+
+- Network reachability: There are open network paths to Amazon EC2 instances in your environment.
+网络可访问性：您的环境中有指向 Amazon EC2 实例的开放网络路径。
+
+Some features of Amazon Inspector include the following:
+Amazon Inspector 的一些功能包括：
+
+- Continuously scan your environment for vulnerabilities and network exposure. 
+持续扫描您的环境以查找漏洞和网络暴露。
+
+- Assess vulnerabilities accurately and provide a risk score.
+准确评估漏洞并提供风险评分。
+
+- Identify high-impact findings.
+确定高影响力的调查结果。
+
+- Monitor and process findings with other services and systems.
+使用其他服务和系统监控和处理调查结果。
+
+Note: The risk score is based on security metrics from the National Vulnerability Database(opens in a new tab) (NVD) and is adjusted according to your compute environment.
+注意：风险评分基于国家漏洞数据库 （NVD） 中的安全指标，并根据您的计算环境进行调整。
+
+### AWS Audit Manager 
+
+helps you continually audit your AWS usage to streamline how you manage risk and compliance with regulations and industry standards. 
+AWS Audit Manager 可帮助您持续审计 AWS 使用情况，以简化管理风险以及遵守法规和行业标准的方式。
+
+Audit Manager automates evidence collection so you can conveniently assess whether your policies, procedures, and activities (also known as controls) are operating effectively. When it's time for an audit, Audit Manager helps you manage stakeholder reviews of your controls. 
+Audit Manager 可自动收集证据，因此您可以方便地评估您的策略、程序和活动（也称为控制措施）是否有效运行。当需要进行审计时，Audit Manager 可帮助您管理利益相关者对控制措施的审查。
+
+Some tasks you can perform with Audit Manager include the following:
+您可以使用 Audit Manager 执行的一些任务包括：
+
+- Upload and manage evidence from hybrid or multi-cloud environments.
+上传和管理来自混合云或多云环境的证据。
+
+- Support common compliance standards and regulations.
+支持常见的合规性标准和法规。
+
+- Monitor your active assessments.
+监控您的活动评估。
+
+- Search for evidence.  寻找证据。
+
+- Ensure evidence integrity.
+确保证据完整性。
+
+### AWS Artifact 
+
+provides on-demand downloads of AWS security and compliance documents, such as AWS ISO certifications, PCI reports, and SOC Reports. 
+AWS Artifact 提供 AWS 安全性与合规性文档的按需下载，例如 AWS ISO 认证、PCI 报告和 SOC 报告。
+
+You can submit the security and compliance documents to your auditors or regulators to demonstrate the security and compliance of your AWS infrastructure.
+您可以向审计员或监管机构提交安全性和合规性文档，以证明 AWS 基础设施的安全性和合规性。
+
+AWS customers are responsible for developing or obtaining documents that demonstrate the security and compliance of their companies. You will learn more about the responsibilities of customers in a later lesson about the Shared Responsibility Model.
+AWS 客户负责开发或获取证明其公司安全性和合规性的文档。您将在后面的有关 Common Responsibility Model 的课程中了解有关客户责任的更多信息。
+
+### AWS CloudTrail 
+
+helps you perform operational and risk auditing, governance, and compliance of your AWS account. Actions taken by a user, role, or an AWS service are recorded as events in CloudTrail. Events include actions taken in the AWS Management Console, AWS Command Line Interface (AWS CLI), and AWS SDKs and APIs. 
+AWS CloudTrail 可帮助您对 AWS 账户执行运营和风险审计、监管和合规性。用户、角色或 AWS 服务执行的作将作为事件记录在 CloudTrail 中。事件包括在 AWS 管理控制台、AWS Command Line Interface （AWS CLI） 以及 AWS 开发工具包和 API 中执行的作。
+
+Visibility into your AWS account activity is a key aspect of security and operational best practices. You can use CloudTrail to view, search, download, archive, analyze, and respond to account activity across your AWS infrastructure. You can identify who took which action, which resources were acted upon, and when the event occurred. These and other details can help you analyze and respond to activity in your AWS account.
+了解您的 AWS 账户活动是安全性和运营最佳实践的一个关键方面。您可以使用 CloudTrail 查看、搜索、下载、存档、分析和响应 AWS 基础设施中的账户活动。您可以确定谁执行了哪些作、对哪些资源执行了作以及事件发生的时间。这些详细信息和其他详细信息可以帮助您分析和响应 AWS 账户 中的活动。
+
+### AWS Trusted 
+
+Advisor helps you optimize costs, increase performance, improve security and resilience, and operate at scale in the cloud. 
+AWS Trusted Advisor 可帮助您优化成本、提高性能、提高安全性和弹性，并在云中大规模运营。
+
+Trusted Advisor continuously evaluates your AWS environment using best practice checks across the categories of cost optimization, performance, resilience, security, operational excellence, and service limits. It then recommends actions to remediate any deviations from best practices.
+Trusted Advisor 使用成本优化、性能、弹性、安全性、卓越运营和服务限制等类别的最佳实践检查持续评估您的 AWS 环境。然后，它会建议采取措施来修复与最佳实践的任何偏差。
+
+Use cases for Trusted Advisor include:
+Trusted Advisor 的使用案例包括：
+
+- Optimizing cost and efficiency
+优化成本和效率
+
+- Assessing your AWS environment against security standards and best practices
+根据安全标准和最佳实践评估您的 AWS 环境
+
+- Improving performance  提高性能
+
+- Improving resilience  提高复原能力
+
+
+## Data Governance Strategies
+数据治理策略
+
+Data governance strategies for AI and generative AI workloads involve an approach to managing the data lifecycle, from data collection and storage, to data usage and security. The following are some key data governance strategies that organizations can consider.
+AI 和生成式 AI 工作负载的数据治理策略涉及一种管理数据生命周期的方法，从数据收集和存储到数据使用和安全性。以下是组织可以考虑的一些关键数据管理策略。
+
+### Data quality and integrity
+数据质量和完整性
+
+To ensure the quality and integrity of your data, follow these steps:
+要确保数据的质量和完整性，请执行以下步骤：
+
+- Establish data quality standards and processes to ensure the accuracy, completeness, and consistency of data used for AI and generative AI models.
+建立数据质量标准和流程，以确保用于 AI 和生成式 AI 模型的数据的准确性、完整性和一致性。
+
+- Implement data validation and cleansing techniques to identify and address data anomalies and inconsistencies.
+实施数据验证和清理技术，以识别和解决数据异常和不一致问题。
+
+- Maintain data lineage and provenance to understand the origin, transformation, and usage of data.
+维护数据沿袭和来源，以了解数据的来源、转换和使用情况。
+
+  - Data lineage and provenance are concepts that describe the origins, history, and transformations of data as it flows through an organization.
+数据世系和来源是描述数据在组织中流动时的来源、历史和转换的概念。
 
 ## x
 
