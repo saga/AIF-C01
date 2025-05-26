@@ -640,4 +640,26 @@ https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748250000/5
 
 ##
 
+A company has several AI systems that involve different levels of generative AI solutions, such as pre-trained models and fine-tuned models. The developers need to follow governance strategies to ensure responsible development and deployment.
+一家公司有多个 AI 系统，这些系统涉及不同级别的生成式 AI 解决方案，例如预训练模型和微调模型。开发人员需要遵循治理策略，以确保负责任的开发和部署。
+
+What are some governance strategies that they might consider? (Select TWO.)
+他们可能会考虑哪些治理策略？（选择 TWO。
+
+- Monitor the underlying infrastructure that supports the artificial intelligence (AI) system.
+监控支持人工智能 （AI） 系统的底层基础设施。
+
+- Develop clear policies relating to the organization's approach to generative artificial intelligence (AI).
+制定与组织的生成式人工智能 （AI） 方法相关的明确政策。
+
+- Implement security controls that are used to mitigate risk.
+实施用于降低风险的安全控制。
+
+- Monitor the performance of the artificial intelligence (AI) system by tracking metrics, such as model accuracy.
+通过跟踪指标（如模型准确性）来监控人工智能 （AI） 系统的性能。
+
+- Maintain high standards of transparency in the development of their solutions.
+在开发解决方案时保持高标准的透明度。
+
+2 and 5.
 
