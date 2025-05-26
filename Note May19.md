@@ -61,20 +61,19 @@ The design for human and AI learning focuses on creating better AI systems.
 The end-to-end machine learning lifecycle process includes the following phases: 
 端到端机器学习生命周期流程包括以下阶段：
 
-Business goal identification 业务目标识别
+- Business goal identification 业务目标识别
 
-ML problem framing  机器学习问题框架
+- ML problem framing  机器学习问题框架
 
-Data processing (data collection, data preprocessing, and feature engineering) 数据处理（数据收集、数据预处理和特征工程）
+- Data processing (data collection, data preprocessing, and feature engineering) 数据处理（数据收集、数据预处理和特征工程）
 
-Model development (training, tuning, and evaluation) 模型开发（训练、调整和评估）
+- Model development (training, tuning, and evaluation) 模型开发（训练、调整和评估）
 
-Model deployment (inference and prediction) 模型部署（推理和预测）
+- Model deployment (inference and prediction) 模型部署（推理和预测）
 
-Model monitoring  模型监控
+- Model monitoring  模型监控
 
-Model retraining  模型再训练
-
+- Model retraining  模型再训练
 
 尽管人工评估被认为是黄金标准，但自动化指标可以提供一种快速且可扩展的方法来评估基础模型性能。这些指标通常衡量模型输出的特定方面，例如：
 
@@ -84,7 +83,7 @@ BLEU score (for evaluating machine translation) BLEU 分数（用于评估机器
 
 F1 score (for evaluating classification or entity recognition tasks) F1 分数（用于评估分类或实体识别任务）
 
-Metrics like ROUGE, BLEU, and BERTScore provide an initial assessment of the foundation model's capabilities. ROUGE、BLEU 和 BERTScore 等指标提供了对基础模型功能的初步评估。
+Metrics like **ROUGE, BLEU, and BERTScore** provide an initial assessment of the foundation model's capabilities. ROUGE、BLEU 和 BERTScore 等指标提供了对基础模型功能的初步评估。
 
 Recall-Oriented Understudy for Gisting Evaluation (ROUGE) is a set of metrics used for evaluating automatic summarization and machine translation systems. It measures the quality of a generated summary or translation by comparing it to one or more reference summaries or translations.
 用于 Gisting Evaluation 的 Recall-Oriented Understudy （ROUGE） 是一组用于评估自动摘要和机器翻译系统的指标。它通过与一个或多个参考摘要或翻译进行比较来衡量生成的摘要或翻译的质量。
