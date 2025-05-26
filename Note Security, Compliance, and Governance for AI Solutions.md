@@ -663,3 +663,308 @@ What are some governance strategies that they might consider? (Select TWO.)
 
 2 and 5.
 
+***
+
+## Security considerations  安全注意事项
+
+In the context of AI and generative AI, there are a number of security tasks, such as threat detection, vulnerability management, infrastructure protection, prompt injection, and data encryption. Following is a description of each of these tasks.
+在 AI 和生成式 AI 的上下文中，有许多安全任务，例如威胁检测、漏洞管理、基础设施保护、提示注入和数据加密。以下是对每个任务的描述。
+
+### Threat detection  威胁检测
+
+To detect threats to your AI systems, do the following:
+要检测对 AI 系统的威胁，请执行以下作：
+
+- Identify and monitor for potential security threats, such as malicious actors attempting to exploit vulnerabilities in AI systems or using generative AI for malicious purposes. The following are some examples:
+识别和监控潜在的安全威胁，例如恶意行为者试图利用 AI 系统中的漏洞或将生成式 AI 用于恶意目的。以下是一些示例：
+  - Generating fake content  生成虚假内容
+  - Manipulating data  处理数据
+  - Automating attacks  自动化攻击
+
+- You can assist threat detection by developing and deploying AI-powered threat detection systems. You can analyze network traffic, user behavior, and other data sources to detect and respond to potential threats.
+您可以通过开发和部署 AI 驱动的威胁检测系统来协助威胁检测。您可以分析网络流量、用户行为和其他数据源，以检测和响应潜在威胁。
+
+
+### Vulnerability management  漏洞管理
+
+To help manage vulnerability, do the following:
+为了帮助管理漏洞，请执行以下作：
+
+- Identify and address vulnerabilities in AI and generative AI systems, including software bugs, model weaknesses, and potential attack vectors (for example, malware, viruses, and email attachments).
+识别并解决 AI 和生成式 AI 系统中的漏洞，包括软件错误、模型弱点和潜在的攻击媒介（例如，恶意软件、病毒和电子邮件附件）。
+- Regularly conduct security assessments, penetration testing (attempt to find and exploit vulnerabilities), and code reviews to uncover and address vulnerabilities.
+定期进行安全评估、渗透测试（尝试查找和利用漏洞）和代码审查，以发现和解决漏洞。
+- Implement robust patch management and update processes to ensure that AI systems are kept up to date and secure.
+实施强大的补丁管理和更新流程，以确保 AI 系统保持最新和安全。
+
+### Infrastructure protection
+基础设施保护
+
+To ensure that your infrastructure is protected, do the following:
+要确保您的基础设施受到保护，请执行以下作：
+
+- Secure the underlying infrastructure that supports AI and generative AI systems, such as the following:
+保护支持 AI 和生成式 AI 系统的底层基础设施，例如：
+  - Cloud computing platforms
+    云计算平台
+  - Edge devices 
+  - Data stores  数据存储
+
+- Implement strong access controls, network segmentation, encryption, and other security measures to protect the infrastructure from unauthorized access and attacks.
+实施强大的访问控制、网络分段、加密和其他安全措施，以保护基础设施免受未经授权的访问和攻击。
+
+- Ensure that the AI infrastructure is resilient and can withstand failures, attacks, or other disruptions.
+确保 AI 基础架构具有弹性，并且能够承受故障、攻击或其他中断。
+
+### Prompt injection  Prompt注射
+You need to mitigate the risk of prompt injection attacks. In these attacks, adversaries attempt to manipulate the input prompts of generative AI models to generate malicious or undesirable content. To reduce the risk, do the following:
+您需要降低Prompt注入攻击的风险。在这些攻击中，攻击者试图纵生成式 AI 模型的输入提示，以生成恶意或不良内容。要降低风险，请执行以下作：
+
+- Employ techniques, such as prompt filtering, sanitization, and validation, to ensure that the input prompts are safe and do not contain malicious content.
+采用提示筛选、清理和验证等技术，以确保输入提示安全且不包含恶意内容。
+- Develop robust models and training procedures that are resistant to prompt injection attacks.
+开发强大的模型和训练程序，以抵御即时注入攻击。
+
+### Data encryption   数据加密
+
+To protect the confidentiality and integrity of the data used to train and deploy AI and generative AI models, do the following:
+为了保护用于训练和部署 AI 和生成式 AI 模型的数据的机密性和完整性，请执行以下作：
+
+- Implement strong encryption mechanisms to secure both data at rest and data in transit. Data at rest refers to data that is stored on servers, in databases, or on local devices. Data in transit refers to data that is transmitted during communication between different components of the AI system.
+实施强大的加密机制来保护静态数据和传输中的数据。静态数据是指存储在服务器、数据库或本地设备上的数据。传输中的数据是指在 AI 系统的不同组件之间通信期间传输的数据。
+- Ensure that the encryption keys are properly managed and protected from unauthorized access.
+确保加密密钥得到正确管理并防止未经授权的访问。
+
+## The OWASP Top 10 for LLMs
+OWASP LLM 前 10 名
+
+The Open Web Application Security Project (OWASP) Top 10 is the industry standard list of the top 10 vulnerabilities that can impact a generative AI LLM system. These vulnerabilities are as follows:
+开放 Web 应用程序安全项目 （OWASP） 前 10 名是可能影响生成式 AI LLM 系统的前 10 大漏洞的行业标准列表。这些漏洞如下：
+
+1. Prompt injection: Malicious user inputs that can manipulate the behavior of a language model
+提示注入：可以纵语言模型行为的恶意用户输入
+
+2. Insecure output handling: Failure to properly sanitize or validate model outputs, leading to security vulnerabilities
+不安全的输出处理：未能正确清理或验证模型输出，从而导致安全漏洞
+
+3. Training data poisoning: Introducing malicious data into a model's training set, causing it to learn harmful behaviors
+训练数据中毒：将恶意数据引入模型的训练集，使其学习有害行为
+
+4. Model denial of service: Techniques that exploit vulnerabilities in a model's architecture to disrupt its availability
+模型拒绝服务：利用模型架构中的漏洞来破坏其可用性的技术
+
+5. Supply chain vulnerabilities: Weaknesses in the software, hardware, or services used to build or deploy a model
+供应链漏洞：用于构建或部署模型的软件、硬件或服务的弱点
+
+6. Sensitive information disclosure: Leakage of sensitive data through model outputs or other unintended channels
+敏感信息泄露：敏感数据通过模型输出或其他非预期渠道泄露
+
+7. Insecure plugin design: Flaws in the design or implementation of optional model components that can be exploited
+不安全的插件设计：可选模型组件的设计或实现中可被利用的缺陷
+
+8. Excessive agency: Granting a model too much autonomy or capability, leading to unintended and potentially harmful actions
+过度代理：授予模型过多的自主权或能力，导致意外且可能有害的作
+
+9. Overreliance: Over-dependence on a model's capabilities, leading to over-trust and failure to properly audit its outputs
+过度依赖：过度依赖模型的能力，导致过度信任和无法正确审计其输出
+
+10. Model theft: Unauthorized access or copying of a model's parameters or architecture, allowing for its reuse or misuse
+模型盗窃：未经授权访问或复制模型的参数或架构，允许其重复使用或误用
+
+
+## AWS Services and Features for Securing AI Systems
+用于保护 AI 系统的 AWS 服务和功能
+
+https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748250000/59IiX6zQSsjBq4gNJssw4g/tincan/1795780_1717163965_o_1hv7f4vju9ubfr0g3t1lv71pvb_zip/assets/SharedResponsibilityModel-Final.jpg
+
+### Getting started with defense in depth
+深度防御入门
+
+There are four foundational AWS security services recommended for any workload, any customer, and any industry. You can realize benefits from implementing these deeply-integrated foundational security services, such as the following: 
+对于任何工作负载、任何客户和任何行业，推荐了四种基本的 AWS 安全服务。您可以从实施这些深度集成的基础安全服务中获得好处，例如：
+
+- Security Hub  安全中心
+  AWS Security Hub 为客户提供了一个控制面板，用于查看所有安全检测结果，以及创建和运行自动化手册。
+  
+- AWS KMS
+  AWS KMS 对数据进行加密，并让客户可以选择和控制使用 AWS 托管式密钥或客户管理的密钥来保护他们的数据。
+  
+- GuardDuty  守护
+  Amazon GuardDuty 是一项威胁检测服务，可监控可疑活动和未经授权的行为，以保护 AWS 账户、工作负载和数据。
+  
+- AWS Shield Advanced  AWS Shield 高级版
+  AWS Shield Advanced 有助于保护工作负载免受分布式拒绝服务 （DDoS） 事件的影响。AWS Shield Advanced 包括 AWS WAF 和 AWS Firewall Manager。
+
+Each service provides protection in one of the core security domains of incident response, data protection, threat detection, and network and application protection.  
+每项服务都在事件响应、数据保护、威胁检测以及网络和应用程序保护等核心安全域之一提供保护。
+
+## AWS security services  AWS 安全服务
+
+AWS provides several services and features for securing AI systems. The following services are used to manage user identities and access to resources, identify and protect sensitive data, and guard your AI systems and applications.
+AWS 提供了多种服务和功能来保护 AI 系统。以下服务用于管理用户身份和资源访问、识别和保护敏感数据以及保护您的 AI 系统和应用程序。
+
+### Identify sensitive data before training models
+在训练模型之前识别敏感数据
+
+**Amazon Macie** uses ML to automate sensitive data discovery at scale.
+Amazon Macie 使用 ML 大规模自动发现敏感数据。
+
+You can use Amazon Macie to scan S3 buckets for personally identifiable information (PII), personal health information (PHI), financial information, and other sensitive data. You can determine whether you need to remove the data or whether it needs more security protections before training or fine-tuning models.
+您可以使用 Amazon Macie 扫描 S3 存储桶中的个人身份信息 （PII）、个人健康信息 （PHI）、财务信息和其他敏感数据。在训练或微调模型之前，您可以确定是否需要删除数据，或者是否需要更多安全保护。
+
+You can also scan databases by extracting data to a data lake in Amazon S3 to then have Amazon Macie scan the database content.
+您还可以通过将数据提取到 Amazon S3 中的数据湖来扫描数据库，然后让 Amazon Macie 扫描数据库内容。
+
+### Manage identities and access to AWS services and resources
+管理身份以及对 AWS 服务和资源的访问
+
+With **AWS Identity and Access Management (IAM)**, you can specify who or what can access services and resources in AWS. You can also centrally manage fine-grained permissions, and analyze access to refine permissions across AWS. Here are some IAM entities that you can create:
+借助 AWS Identity and Access Management （IAM），您可以指定谁或哪些内容可以访问 AWS 中的服务和资源。您还可以集中管理精细权限，并分析访问权限以优化整个 AWS 中的权限。以下是您可以创建的一些 IAM 实体：
+
+- IAM users and IAM user groups: An IAM user is an entity that you create in AWS. The IAM user represents the human user or workload who uses the IAM user to interact with AWS. A user in AWS consists of a name and credentials. An IAM user group is a collection of IAM users. User groups let you specify permissions for multiple users, which can make it more convenient to manage the permissions for those users. 
+IAM 用户和 IAM 用户组：IAM 用户是您在 AWS 中创建的实体。IAM 用户表示使用 IAM 用户与 AWS 交互的人类用户或工作负载。AWS 中的用户由名称和凭证组成。IAM 用户组是 IAM 用户的集合。用户组允许您为多个用户指定权限，这样可以更方便地管理这些用户的权限。
+
+- IAM roles: An IAM role is an IAM identity that you can create in your account that has specific permissions. An IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS. 
+IAM 角色：IAM 角色是您可以在账户中创建的具有特定权限的 IAM 身份。IAM 角色类似于 IAM 用户，因为它是具有权限策略的 AWS 身份，用于确定身份在 AWS 中可以做什么和不能做什么。
+
+- IAM policies: A policy is an entity that, when attached to an identity or resource, defines their permissions.
+IAM 策略：策略是一个实体，当附加到身份或资源时，该实体定义其权限。
+
+### Limit access to your data, models, and outputs
+限制对数据、模型和输出的访问
+
+Apply a policy of least privilege to training data, models, and applications using AWS IAM Identity Center and IAM Access Analyzer. Here are some other services you can use to limit access:
+使用 **AWS IAM Identity Center 和 IAM Access Analyzer** 将最低权限策略应用于训练数据、模型和应用程序。以下是您可以用来限制访问的一些其他服务：
+
+- Explore further **zero trust** capabilities to add fine-grained access controls with AWS Verified Access and Amazon Verified Permissions. 
+进一步探索 Zero Trust 功能，以使用 AWS Verified Access 和 Amazon Verified Permissions 添加精细访问控制。
+
+- Use AWS Verified Access to further eliminate the costs, complexity and performance issues related to virtual private networks (VPNs). 
+使用 **AWS Verified Access** 进一步消除与虚拟专用网络 （VPN） 相关的成本、复杂性和性能问题。
+
+You can use **Amazon SageMaker Role Manager** to build and manage persona-based IAM roles for common ML needs.
+您可以使用 Amazon SageMaker Role Manager 来构建和管理基于角色的 IAM 角色，以满足常见的 ML 需求。
+
+Amazon SageMaker Role Manager provides three preconfigured role personas and predefined permissions for common ML activities. These role personas are as follows:
+Amazon SageMaker Role Manager 为常见的 ML 活动提供三个预配置的角色角色和预定义权限。这些角色角色如下：
+
+- Data scientist persona
+- MLOps persona 
+- SageMaker compute persona
+
+### Protect data from exfiltration (data theft) and manipulation
+保护数据免遭泄露（数据盗窃）和纵
+
+For strong controls over data ingress and egress from AI systems, you can define strict AWS Network Firewall and Amazon VPC policies. This will prevent the movement of data in and out of your VPCs and networks. Here are some more services you can use to control data entering and leaving your AI systems:
+为了对 AI 系统的数据进出进行强有力的控制，您可以定义严格的 AWS Network Firewall 和 Amazon VPC 策略。这将防止数据移入和移出您的 VPC 和网络。以下是可用于控制进出 AI 系统的数据的其他一些服务：
+
+- AWS Network Firewall supports deep packet inspection to decrypt, inspect, and re-encrypt inbound and outbound TLS traffic to protect data. Data destined for the internet, another VPC, or another subnet is supported.
+**AWS Network Firewall** 支持深度数据包检查，以解密、检查和重新加密入站和出站 TLS 流量，以保护数据。支持发往 Internet、其他 VPC 或其他子网的数据。
+
+- Amazon Virtual Private Cloud (Amazon VPC) lets you launch AWS resources in a logically isolated virtual network that you've defined. This virtual network closely resembles a traditional network that you would operate in your own data center, with the benefits of using the scalable infrastructure of AWS.
+**Amazon Virtual Private Cloud （Amazon VPC）** 允许您在定义的逻辑隔离的虚拟网络中启动 AWS 资源。此虚拟网络与您将在自己的数据中心运行的传统网络非常相似，具有使用 AWS 的可扩展基础设施的优势。
+
+- You can use AWS PrivateLink to establish private connectivity from your Amazon VPC to Amazon Bedrock, without having to expose your VPC to internet traffic.
+您可以使用 **AWS PrivateLink** 建立从 Amazon VPC 到 Amazon Bedrock 的私有连接，而无需将 VPC 暴露给 Internet 流量。
+
+### Protect AI workloads with intelligent threat detection
+通过智能威胁检测保护 AI 工作负载
+
+In addition to Amazon GuardDuty, Amazon Inspector and Amazon Detective can help with intelligent threat detection. These services help identify suspicious activity such as AWS credential exfiltration (theft) and suspicious user API usage, including Amazon Bedrock and Amazon SageMaker APIs. Following is a brief description of Amazon Inspector and Amazon Detective:
+除了 **Amazon GuardDuty** 之外，**Amazon Inspector** 和 **Amazon Detective** 还可以帮助进行智能威胁检测。这些服务有助于识别可疑活动，例如 AWS 凭证泄露（盗窃）和可疑的用户 API 使用情况，包括 Amazon Bedrock 和 Amazon SageMaker API。以下是 Amazon Inspector 和 Amazon Detective 的简要说明：
+
+- Amazon Inspector is an automated vulnerability management service that continually scans AWS workloads for software vulnerabilities and unintended network exposure. 
+Amazon Inspector 是一项自动化漏洞管理服务，可持续扫描 AWS 工作负载，以发现软件漏洞和意外的网络暴露。
+
+- Amazon Detective streamlines the investigative process and helps security teams conduct faster and more effective forensic investigations.
+Amazon Detective 简化了调查流程，并帮助安全团队进行更快、更有效的取证调查。
+
+### Automate incident response and compliance
+自动化事件响应和合规性
+
+By automating security tasks on AWS, you can be more secure by reducing human configuration errors. This gives your team more time to focus on other work critical to your business. Task automation makes it more convenient for your security team to work closely with developer and operations teams to create and deploy code faster and more securely. 
+通过在 AWS 上自动执行安全任务，您可以减少人为配置错误，从而提高安全性。这使您的团队有更多时间专注于对您的业务至关重要的其他工作。任务自动化使您的安全团队能够更方便地与开发人员和运营团队密切合作，以更快、更安全地创建和部署代码。
+
+For example, by employing technologies like ML, you can automatically and continuously discover, classify, and protect sensitive data in AWS. 
+例如，通过采用 ML 等技术，您可以自动、持续地发现、分类和保护 AWS 中的敏感数据。
+
+You can also automate infrastructure and application security checks to continually enforce your security and compliance controls and help ensure confidentiality, integrity, and availability at all times.
+您还可以自动执行基础设施和应用程序安全检查，以持续实施安全性和合规性控制，并帮助始终确保机密性、完整性和可用性。
+
+You can automate incident response and compliance with AWS services that you learned about earlier, such as the following:
+您可以使用之前了解的 AWS 服务自动执行事件响应和合规性，例如：
+
+- AWS Security Hub  AWS 安全中心
+- AWS Config
+- AWS Audit Manager  AWS 审计管理器
+- AWS Artifact  AWS 构件
+
+### Defend your generative AI web applications and data
+保护您的生成式 AI Web 应用程序和数据
+
+In addition to AWS Shield Advanced and AWS Firewall Manager, which you learned about earlier, you can also use AWS WAF to protect your web applications and data.
+除了您之前了解的 AWS Shield Advanced 和 AWS Firewall Manager 之外，您还可以使用 AWS WAF 来保护您的 Web 应用程序和数据。
+
+AWS WAF helps you protect against common web exploits and bots that can affect availability, compromise security, or consume excessive resources. With AWS WAF you can do the following:
+AWS WAF 可帮助您防范可能影响可用性、损害安全性或消耗过多资源的常见 Web 漏洞和机器人程序。使用 AWS WAF，您可以执行以下作：
+
+- Filter web traffic.  过滤 Web 流量。
+- Prevent account takeover fraud.
+防止帐户盗用欺诈。
+- Use AWS WAF Bot Control to control pervasive bot traffic (such as scrapers, scanners, crawlers). Pervasive bot traffic can consume excess resources, skew metrics, cause downtime, or perform other undesired activities. For more information, see AWS WAF Bot Control(opens in a new tab)
+使用 **AWS WAF Bot Control** 控制无处不在的机器人流量（例如爬虫、扫描程序、爬网程序）。无处不在的爬虫程序流量可能会消耗过多的资源、扭曲指标、导致停机或执行其他不需要的活动。
+
+
+## Understanding Data and Model Lineage
+了解数据和模型沿袭
+
+Data and model lineage refer to the detailed record of the origin, transformation, and evolution of data and models used in AI and generative AI systems. This information is important for understanding the origin, reliability, and potential biases or limitations of the data and models used in these systems.
+数据和模型沿袭是指 AI 和生成式 AI 系统中使用的数据和模型的起源、转换和演变的详细记录。此信息对于了解这些系统中使用的数据和模型的来源、可靠性以及潜在偏差或局限性非常重要。
+
+### Citing sources and documenting origins
+引用来源并记录来源
+
+Source citation and documenting data origins are essential tasks that contribute to securing your AI systems. These tasks help ensure the transparency, traceability, and accountability of the data and information used in the AI system. This is important for maintaining the integrity and trustworthiness of the system. These tasks involve providing information about the sources of the data used to train the generative AI model and the provenance of the data. Following is a description of source citation and how to document data origins.
+来源引用和记录数据来源是有助于保护 AI 系统的重要任务。这些任务有助于确保 AI 系统中使用的数据和信息的透明度、可追溯性和问责制。这对于维护系统的完整性和可信度非常重要。这些任务涉及提供有关用于训练生成式 AI 模型的数据源和数据来源的信息。以下是来源引用以及如何记录数据来源的说明。
+
+###
+
+Data lineage is a technique used to track the history of data, including its origin, transformation, and movement through different systems.
+数据沿袭是一种用于跟踪数据历史记录的技术，包括其来源、转换和在不同系统中的移动。
+
+Cataloging involves the systematic organization and documentation of the datasets, models, and other resources used in the development of a generative AI system.
+编目涉及对生成式 AI 系统开发中使用的数据集、模型和其他资源的系统组织和文档编制。
+
+Model cards are a standardized format for documenting the key details about an ML model, including its intended use, performance characteristics, and potential limitations.
+模型卡是一种标准化格式，用于记录有关 ML 模型的关键详细信息，包括其预期用途、性能特征和潜在限制。
+
+### Amazon SageMaker 模型卡
+
+You can use Amazon SageMaker Model Cards to document critical details about your ML models in a single place for streamlined governance and reporting.
+您可以使用 Amazon SageMaker Model Cards 在一个位置记录有关 ML 模型的关键详细信息，以简化管理和报告。
+
+
+
+## Best Practices for Secure Data Engineering
+安全数据工程的最佳实践
+
+### Review of data usage in generative AI
+生成式 AI 中的数据使用情况回顾
+
+A generative AI application typically includes customer data, fine-tuning data, and training data. You learned about the Generative AI Security Scoping Matrix in the Approaches for Implementing Governance Strategies lesson. Depending on the scope of the application, the ownership and control of the data will vary between the customer and the application provider. The following is a review of the common data usage in generative AI.
+生成式 AI 应用程序通常包括客户数据、微调数据和训练数据。您在实施治理策略的方法课程中学习了生成式 AI 安全范围矩阵。根据应用程序的范围，客户和应用程序提供商对数据的所有权和控制权会有所不同。
+
+https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748250000/59IiX6zQSsjBq4gNJssw4g/tincan/1795780_1717163965_o_1hv7f4vju9ubfr0g3t1lv71pvb_zip/assets/DataFlowsGenAIapp-Final.png
+
+### What is the data engineering lifecycle?
+什么是数据工程生命周期？
+
+The data engineering lifecycle is an iterative process where the data is collected, prepared, and analyzed. This data is then used to train, evaluate, and continuously improve the AI or generative AI models. This lifecycle ensures that the underlying data is of high quality, representative, and optimized for the specific AI or generative AI use case. Ultimately, this process contributes to the success and performance of the AI or generative AI systems.
+数据工程生命周期是一个迭代过程，其中收集、准备和分析数据。然后，这些数据用于训练、评估和持续改进 AI 或生成式 AI 模型。此生命周期可确保基础数据具有高质量、代表性，并针对特定 AI 或生成式 AI 使用案例进行了优化。最终，此过程有助于 AI 或生成式 AI 系统的成功和性能。
+
+https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1748250000/59IiX6zQSsjBq4gNJssw4g/tincan/1795780_1717163965_o_1hv7f4vju9ubfr0g3t1lv71pvb_zip/assets/DataEngineeringLifeCycle-Final.png
+
+
+
+
+
