@@ -16,6 +16,12 @@ Personas: Data Scientist / MLOps / SageMaker Compute
 
 AWS SageMaker storage volumes is encrypted by default
 
+AWS Key Management Service, encryption key. Best practice: specific a KMS Key for default encryption.
 
+# Encryption in transit
+
+AWS Service Endpoints support TLS/SSL
+
+#
 
 #
