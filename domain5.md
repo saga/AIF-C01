@@ -12,6 +12,10 @@ AWS CloudTrail主要关注“谁在何时对您的AWS账户做了什么”，侧
 
 Personas: Data Scientist / MLOps / SageMaker Compute
 
-# 
+# Encryption at rest
+
+AWS SageMaker storage volumes is encrypted by default
+
+
 
 #
